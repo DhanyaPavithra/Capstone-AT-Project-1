@@ -20,8 +20,6 @@ class WebLocators:
         self.addEmployeeLocator = '//*[@id="app"]/div[1]/div[1]/header/div[2]/nav/ul/li[3]/a'
         self.firstNameLocator = '//*[@id="app"]/div[1]/div[2]/div[2]/div/div/form/div[1]/div[2]/div[1]/div[1]/div/div/div[2]/div[1]/div[2]/input'
         self.middleNameLocatorPIM1 = '//*[@id="app"]/div[1]/div[2]/div[2]/div/div/form/div[1]/div[2]/div[1]/div[1]/div/div/div[2]/div[2]/div[2]/input'
-        # self.middleNameLocator = '//*[@id="app"]/div[1]/div[2]/div[2]/div/div/div/div[2]/div[1]/form/div[1]/div/div/div/div[2]/div[2]/div[2]/input'
-        # self.middleNameLocator = '//*[@id="app"]/div[1]/div[2]/div[2]/div/div/form/div[1]/div[2]/div[1]/div[1]/div/div/div[2]/div[2]/div[2]/input'
         self.middleNameLocator = '//*[@id="app"]/div[1]/div[2]/div[2]/div/div/div/div[2]/div[1]/form/div[1]/div/div/div/div[2]/div[2]/div[2]/input'
         self.lastNameLocator = '//*[@id="app"]/div[1]/div[2]/div[2]/div/div/form/div[1]/div[2]/div[1]/div[1]/div/div/div[2]/div[3]/div[2]/input'
         self.employeeIDLocator = '//*[@id="app"]/div[1]/div[2]/div[2]/div/div/form/div[1]/div[2]/div[1]/div[2]/div/div/div[2]/input'
@@ -35,7 +33,6 @@ class WebLocators:
         self.maleRadioBtnLocator ='//*[@id="app"]/div[1]/div[2]/div[2]/div/div/div/div[2]/div[1]/form/div[3]/div[2]/div[2]/div/div[2]/div[1]/div[2]/div/label/span'
         self.femaleRadioBtnLocator ='//*[@id="app"]/div[1]/div[2]/div[2]/div/div/div/div[2]/div[1]/form/div[3]/div[2]/div[2]/div/div[2]/div[2]/div[2]/div/label/span'
         self.savePersonalDetailsBtnLocator ='//*[@id="app"]/div[1]/div[2]/div[2]/div/div/div/div[2]/div[1]/form/div[4]/button'
-        # self.savePersonalDetailsBtnLocator = '//*[@id="app"]/div[1]/div[2]/div[2]/div/div/div/div[2]/div[1]/form/div[5]/button'
         self.editOptionLocator = '//*[@id="app"]/div[1]/div[2]/div[2]/div/div[2]/div[3]/div/div[2]/div[1]/div/div[9]/div/button[2]'
         self.deleteEmployeeLocator = '//*[@id="app"]/div[1]/div[2]/div[2]/div/div[2]/div[3]/div/div[2]/div[1]/div/div[9]/div/button[1]'
         self.deleteconfirmationLocator ='//*[@id="app"]/div[3]/div/div/div/div[3]/button[2]'
@@ -43,26 +40,6 @@ class WebLocators:
         self.popupeditLocator = "oxd-toaster_1"
         self.popupDeletionLocator = "oxd-toaster_1"
 
-    def enterText(self, driver, locator, textvalue):
-        """
-        Function to enter the data by finding the location by using Xpath locators
-
-        """
-        driver.find_element(by=By.XPATH, value=locator).send_keys(textvalue)
-
-    def clickBtn(self,driver,locator):
-        """
-        Function to do click action by finding the location by using Xpath locators
-
-        """
-        driver.find_element(by=By.XPATH, value=locator).click()
-
-    def clickRadioBtn(self,driver,locator):
-        """
-        function to click on the Radio button
-
-        """
-        driver.find_element(by=By.XPATH, value=locator).click()
-
+    
 
 
