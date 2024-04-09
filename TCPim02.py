@@ -1,4 +1,4 @@
-# Test case ID: TC_PIM_01:
+# Test case ID: TC_PIM_02:
 
 # Importing Data and Locator details from respective files:
 from Data import data
